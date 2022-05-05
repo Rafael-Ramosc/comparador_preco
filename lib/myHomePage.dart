@@ -1,8 +1,11 @@
 import 'package:comparador_preco/input.dart';
 import 'package:flutter/material.dart';
+import 'input.dart';
 
 class MyHomePage extends StatelessWidget {
   const MyHomePage({Key? key}) : super(key: key);
+
+  String? get num1 => '';
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +18,10 @@ class MyHomePage extends StatelessWidget {
         body: Padding(
           padding: EdgeInsets.all(20),
           child: Column(
-            children: [Input()],
+            children: [
+              Input(),
+              Text(num1!),
+            ],
           ),
         ),
       ),
